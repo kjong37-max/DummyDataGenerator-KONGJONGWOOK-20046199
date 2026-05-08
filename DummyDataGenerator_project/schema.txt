@@ -1,0 +1,25 @@
+# DummyDataGenerator - Schema Definition File
+#
+# Format:
+#   table = <table_name>
+#   col   = <name>, <TYPE>, [option=value ...]
+#
+# Supported Types:
+#   INT    - 정수          options: min=N  max=N
+#   TEXT   - 랜덤 문자열   options: len=N
+#   NAME   - 사람 이름 (First Last)
+#   EMAIL  - 이메일 주소
+#   DATE   - 날짜          options: from=YYYY-MM-DD  to=YYYY-MM-DD
+#   BOOL   - 0 또는 1
+#   PHONE  - 한국 휴대폰 번호 (010-XXXX-XXXX)
+
+table = users
+
+col = id,          INT,   min=1,    max=99999
+col = full_name,   NAME
+col = email,       EMAIL
+col = age,         INT,   min=18,   max=65
+col = phone,       PHONE
+col = signup_date, DATE,  from=2020-01-01, to=2025-12-31
+col = is_active,   BOOL
+col = memo,        TEXT,  len=20

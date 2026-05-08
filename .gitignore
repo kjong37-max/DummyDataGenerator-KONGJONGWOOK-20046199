@@ -1,0 +1,26 @@
+# Visual Studio
+.vs/
+*.user
+x64/
+Win32/
+Debug/
+Release/
+*.VC.db
+*.VC.opendb
+ipch/
+
+# Build outputs
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.tlog/
+
+# SQLite amalgamation (download separately)
+DummyDataGenerator_project/third_party/sqlite3.c
+DummyDataGenerator_project/third_party/sqlite3.h
+
+# Generated output files
+*.csv
+*.sql
+*.db
