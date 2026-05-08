@@ -3,7 +3,10 @@
     "allow": [
       "Bash(Get-ChildItem -Path \"C:\\\\reviewer\\\\DummyDataGenerator\\\\DummyDataGenerator_project\" -Force)",
       "Bash(Select-Object Name, PSIsContainer)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git add *)"
     ]
   }
 }
